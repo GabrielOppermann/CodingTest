@@ -263,9 +263,9 @@ bool investigate_board(char** board, char** words) {
                         if (investigate_board(board, words)) {
                             return true;
                         }
-                        board[i][j] = '.';
                     }
                 }
+                board[i][j] = '.';
                 return false;
             }
         }
